@@ -144,6 +144,19 @@ var svc = new Service({
 });
 ```
 
+### Node Command-line Options
+
+It may be desired to specify command-line switches to be passed to Node when executing your script. You can do this by setting the `execOptions` within the service config:
+
+```js
+var svc = new Service({
+  name:'Hello World',
+  description: 'The nodejs.org example web server.',
+  script: 'C:\\path\\to\\helloworld.js',
+  execOptions: '--inspect=9229'
+});
+```
+
 
 ### Environment Variables
 
